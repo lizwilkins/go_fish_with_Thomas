@@ -1,0 +1,37 @@
+full_deck
+  check to see if it includes players' card requests
+
+draw_pool
+  initialize with [4] sets of [13] ranks
+  count cards remaining
+    signal when empty (& almost empty?)
+  shuffle cards + pop card
+    or fetch and remove card at random index
+
+player_hand
+  initialize with [0] cards
+  add cards (drawn from pool + passed by other players)
+  count cards contained
+    signal when empty (& almost empty?)
+  group and order cards by rank
+  sets of any rank
+    detect
+    find/identify
+    remove
+    play to table piles
+  cards of specific rank
+    detect
+    count
+    find
+    remove
+    play to table piles
+    pass to other player_hand
+
+player_piles
+  count
+    for each player
+    for table?
+  list which ranks are piled
+    for each player?
+    for table
+
